@@ -1,0 +1,167 @@
+h1,h2,h3,h4,h5,h6,hgroup,
+ul,ol,dd,
+p,figure,
+pre,table,fieldset,hr {
+    margin-bottom: 1rem;
+}
+/* ==== GENERAL STYLES ==== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  background-color: #26201b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
+}
+
+h1 {
+    font-family: 'Open Sans';
+    color: #8e8577;
+    font-size: 4rem;
+    font-weight: 800;
+    color: #5c5c5c;
+    text-align: left;
+    letter-spacing: 0.2em;
+    text-align: center;
+    padding-top: 0.5em;
+}
+
+h2 {
+    font-family: 'Open Sans';
+    color: #8e8577;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #5c5c5c;
+    text-align: left;
+    letter-spacing: 0.2em;
+    text-align: center;
+    padding-top: 0.5em;
+}
+
+a {
+    text-decoration: none;
+    color: #5c5c5c;
+    font-weight: 900;
+}
+
+
+p {
+    font-family: 'Gentium Basic';
+    color: #dcdcdc;
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+    line-height: 32px;
+    
+}
+
+
+.profile-card {
+  width: 480px;
+  max-width: calc(100vw - 20px);
+  margin-top: 30px;
+}
+
+
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+}
+
+img:hover {
+  filter: grayscale(20%);
+  transform: scale(1.03);
+}
+
+.profile-image {
+    border-radius: 50px;
+    text-align: center;
+}
+
+.separator {
+    width: 300px;
+    height: 0.5em;
+    background-color: #5c5c5c;
+    margin-bottom: 1rem;
+    float: right;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.name-headline {
+    margin-bottom: 3rem;
+    
+}
+
+
+.about {
+    margin-bottom: 1rem;
+}
+
+.links {
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+
+li a {
+   color: #dcdcdc;
+}
+
+
+@media (min-width: 768px) {
+    
+body {
+  height: 100vh;
+  background: url('assets/bg1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  transition: all 0.5s ease-in-out;
+} 
+}
+
+@media (min-width: 768px) {
+    
+.profile-card {
+width: 500px;    
+ position: fixed;
+ right: 0;
+ margin-right: 4rem;
+} 
+}
+
+@media (min-width: 768px) {
+.separator {
+    width: 500px;
+    height: 0.5em;
+    background-color: #5c5c5c;
+    margin-bottom: 1rem;
+    float: right;
+    transition: all 1s ease-in-out;
+}
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
